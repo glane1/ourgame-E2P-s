@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock-Paper-Scissors Game</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mygame.css">
 </head>
 <body>
   <main class="container">
@@ -20,13 +20,17 @@
     <div id="playerDisplay" class="display">PLAYER:</div>
     <div id="computerDisplay" class="display">COMPUTER:</div>
     <div id="resultDisplay" class="display result"></div>
+    <div id="matchStatus" class="display match-status"></div>
 
-    <div class="scoreDisplay">Player score: <span id="playerScoreDisplay">0</span></div>
-    <div class="scoreDisplay">Computer score: <span id="computerScoreDisplay">0</span></div>
+    <div class="score-container">
+      <div class="scoreDisplay">Player: <span id="playerScoreDisplay">0</span></div>
+      <div class="scoreDisplay">Computer: <span id="computerScoreDisplay">0</span></div>
+    </div>
+
+    <button id="resetBtn" class="reset-btn" onclick="resetGame()">PLAY AGAIN</button>
 
   </main>
 
-  <script src="index.js"></script>
+  <script src="mygame.js"></script>
 </body>
-
 </html>
